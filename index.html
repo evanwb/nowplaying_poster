@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Now Playing</title>
+    <style>
+      body,
+      html {
+        cursor: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        height: 100%;
+        background-color: black;
+        overflow: hidden;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      #poster {
+        width: 1080px;
+        height: 1620px;
+        position: absolute;
+        top: 300px;
+        /* object-fit: contain; */
+      }
+      #title {
+        position: absolute;
+        top: 85px;
+        font-size: 130px;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+      }
+      .hidden{ 
+        display: none;
+      }   
+    </style>
+  </head>
+  <body>
+    <div id="title" class="hidden" >NOW PLAYING</div>
+    <img id="poster" class="hidden" />
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
